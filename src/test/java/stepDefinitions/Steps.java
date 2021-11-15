@@ -37,7 +37,8 @@ public class Steps extends BaseClass
     @When("Click on Login")
     public void click_on_login() throws InterruptedException {
      lp.clickLogin();
-        Thread.sleep(3000);
+       driver.manage().wait(1000);
+
     }
     @Then("page Title should be {string}")
     public void page_title_should_be(String title)throws InterruptedException
